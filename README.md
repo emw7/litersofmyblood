@@ -30,12 +30,38 @@ public class AcmeControllerRest {
 
 **Spring (REST) @RequestoBody obligatoriness and nullability**
 
-Endpoint request body can be `null` if the `@RequestBody` `required` field is set to `false` (default is `true`). In such a case then it is possible doing a request without specifying the request body and the method will get a `null` request body. If `requires` is true then the request body must be specified in the request otherwise a _Bad Request_ is answered: `{"timestamp":"...","status":400,"error":"Bad Request","path":"..."}`
+Endpoint request body can be `null` if the `@RequestBody` `required` field is set to `false` (default is `true`). In such a case then it is possible doing a request without specifying the request body and the method will get a `null` request body. If `required` is `true` then the request body must be specified in the request otherwise a _Bad Request_ is answered so, in the case `required` is `true` the application never gets a `null` request body.
 
 ```java
-// note: acmeFooPostBody is annotated with 
-public AcmeFooPostResponse fooPost(@NonNull final AcmeFooPostParamters acmeFooPostParamters,
+// note: acmeFooPostBody is annotated with @NonNull because it cannot be null as @RequestBody required is true.
+@PostMapping("/fooa")
+public AcmeFooPostResponse fooPostA(@NonNull final AcmeFooPostParamters acmeFooPostParamters,
       @NonNull @RequestBody(required = true) final AcmeFooPostBody acmeFooPostBody) { ... }
+/*
+cURL example
+
+curl -v -XPOST -H "Content-Type: application/json" --data '{}' http://localhost/foo
+# ^^^ works
+
+curl -v -XPOST http://localhost/foo
+# ^^^ does NOT works and answer is {"timestamp":"...","status":400,"error":"Bad Request","path":"/foo"}
+*/
+
+// note: acmeFooPostBody is annotated with @NNullable because it can be null as @RequestBody required is false.
+@PostMapping("/foob")
+public AcmeFooPostResponse fooPostB(@NonNull final AcmeFooPostParamters acmeFooPostParamters,
+      @Nullable @RequestBody(required = false) final AcmeFooPostBody acmeFooPostBody) { ... }
+/*
+cURL examples
+
+curl -v -XPOST -H "Content-Type: application/json" --data '{}' http://localhost/foo
+# ^^^ works
+
+curl -v -XPOST http://localhost/foo
+# works and acmeFooPostBody will be null
+*/
+
+
 ```
 
 
