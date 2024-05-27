@@ -52,4 +52,8 @@ limitations under the License.
 
 ---
 
+# [Spring (REST) pagination and sorting](./Spring_(REST)_pagination_and_sorting/README.md)
 
+> Here it is analyzed what application has to face with pagination with `org.springframework.data / spring-data-commons`.
+
+---
