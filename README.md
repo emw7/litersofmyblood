@@ -42,7 +42,7 @@ limitations under the License.
 
 **[Spring (REST) answers 404 (not found) for a endpoint I was sure it was mapped](./Spring_(REST)_answers_404_(not_found)_for_a_endpoint_I_was_sure_it_was_mapped/README.md)**
 
-> This was written because after adding a `@RestControl` to a project generated with [spring initializer](https://start.spring.io/) applicaton responded 404 trying to invoke the endpoint.
+> This was written because after adding a `@RestController` to a project generated with [spring initializer](https://start.spring.io/) applicaton responded 404 trying to invoke the endpoint.
 
 ---
 
