@@ -1,0 +1,11 @@
+CHANGELOG
+
+Author: Enrico Maschietto <emw7.github.fraying845@simplelogin.com>  
+Date: 2024-05-27  
+Version: 0.0.2  
+- Spring (REST) @RequestBody obligatoriness and nullability
+
+Author: Enrico Maschietto <emw7.github.fraying845@simplelogin.com>  
+Date: 2024-05-26  
+Version: 0.0.1  
+- Spring (REST) answers 404 (not found) for a endpoint I was sure it was mapped
