@@ -58,6 +58,12 @@ limitations under the License.
 
 ---
 
+**[Maven test surfire Junit5](./Maven_test_surfire_Junit5/README.md)**
+
+> Here it shown how to enable JUnit5 test with maven and the surfire plugin.
+
+---
+
 **[blodyx](./bloodyx/README.md)**
 
 > A collection of java things that have been deemed worth keeping.
