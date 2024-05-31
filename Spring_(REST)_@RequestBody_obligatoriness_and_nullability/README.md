@@ -1,6 +1,6 @@
 # Spring (REST) @RequestBody obligatoriness and nullability
 
-> Here it is analyzed what application has to face with `@RequestBody` parameter.
+Here it is analyzed what application has to face with `@RequestBody` parameter.
 
 Endpoint request body can be `null` if the `@RequestBody` `required` field is set to `false` (default is `true`). In such a case then it is possible doing a request without specifying the request body and the application gets a `null` request body parameter. If `required` is `true` then the request body must be specified in the request otherwise a _Bad Request_ is answered so, in the case `required` is `true` the application never gets a `null` request body. However, in the latter casea the body could be empty (**empty != null**).
 

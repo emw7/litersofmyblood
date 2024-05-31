@@ -1,6 +1,6 @@
 # Spring (REST) pagination and sorting
 
-> Here it is analyzed what application has to face with pagination with `org.springframework.data / spring-data-commons`.
+Here it is analyzed what application has to face with pagination with `org.springframework.data / spring-data-commons`.
 
 For sure there any many ways to manage pagination and sorting and here is described how to face them using `org.springframework.data / spring-data-commons`.
 
