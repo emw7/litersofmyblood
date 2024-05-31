@@ -1,6 +1,11 @@
 CHANGELOG
 
 Author: Enrico Maschietto <emw7.github.fraying845@simplelogin.com>  
+Date: 2024-05-30  
+Version: 0.0.3  
+- Add bloodyx
+
+Author: Enrico Maschietto <emw7.github.fraying845@simplelogin.com>  
 Date: 2024-05-27  
 Version: 0.0.2  
 - Spring (REST) @RequestBody obligatoriness and nullability

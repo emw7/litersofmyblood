@@ -57,3 +57,9 @@ limitations under the License.
 > Here it is analyzed what application has to face with pagination with `org.springframework.data / spring-data-commons`.
 
 ---
+
+**[blodyx](./bloodyx/README.md)**
+
+> A collection of java things that have been deemed worth keeping.
+
+---
