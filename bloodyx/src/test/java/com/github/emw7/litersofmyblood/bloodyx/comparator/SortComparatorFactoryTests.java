@@ -341,8 +341,6 @@ public class SortComparatorFactoryTests {
         new Foo("foo-001", 1), new Foo("foo-005", 3), new Foo("foo-002", 4), new Foo("foo-000", 4),
         new Foo("foo-000", 5), new Foo("foo-005", 0), new Foo("foo-002", 4), new Foo("foo-001", 2));
     List<Foo> sortedFoos = unorderedFoos.stream().sorted(comparator).collect(Collectors.toList());
-    System.out.println(sortedFoos.stream().map($ -> "new Foo(\"" + $.name + "\"," + $.i + ")")
-        .collect(Collectors.joining(",")));
 
     // I really hope this always passes!
     Assertions.assertThat(sortedFoos).as("").isSortedAccordingTo(comparator);
