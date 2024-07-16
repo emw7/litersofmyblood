@@ -6,4 +6,4 @@
 - [CVE (Common Vulnerabilities and Exposures)](https://cve.mitre.org/)
 - [Best Practices for Unit Testing in Java](https://www.baeldung.com/java-unit-testing-best-practices)  
   [Test Case Naming Convention](https://www.baeldung.com/java-unit-testing-best-practices#3-test-case-naming-convention)
-
+- [Running GUI Applications in a Linux Docker Container](https://www.baeldung.com/linux/docker-container-gui-applications)
